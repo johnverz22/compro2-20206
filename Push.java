@@ -14,11 +14,11 @@ public class Push {
             run("git", "config", "user.name", "johnverz22");
             run("git", "config", "user.email", "johnny.verzola@lorma.edu");
 
-            run("git", "pull", "--rebase");
-
             run("git", "add", ".");
 
             run("git", "commit", "-m", commitMessage);
+
+            run("git", "pull", "--rebase");
 
             run("git", "push");
 
@@ -27,6 +27,7 @@ public class Push {
         } catch (Exception e) {
             System.err.println(e.getMessage());
         }
+        scanner.close();
     }
 
     private static void run(String... cmd) throws Exception {
