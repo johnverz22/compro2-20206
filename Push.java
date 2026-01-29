@@ -13,15 +13,10 @@ public class Push {
         try {
             run("git", "config", "user.name", "johnverz22");
             run("git", "config", "user.email", "johnny.verzola@lorma.edu");
-
             run("git", "add", ".");
-
             run("git", "commit", "-m", commitMessage);
-
             run("git", "pull", "--rebase", "origin", "main");
-
             run("git", "push", "origin", "main");
-
             System.out.println("Push complete.");
 
         } catch (Exception e) {
