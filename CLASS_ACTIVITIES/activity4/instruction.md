@@ -1,5 +1,3 @@
-Understood. This simplifies the logic by focusing on a **single student's portfolio** of subjects. The 2D array will now act as a table where each row represents a unique subject, and the columns represent the specific term grades for that subject.
-
 ## Activity: Student Subject Portfolio & CSV Exporter
 
 ### Objective
