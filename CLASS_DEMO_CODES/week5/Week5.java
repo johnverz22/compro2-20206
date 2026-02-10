@@ -56,7 +56,10 @@ public class Week5 {
                     Fruit ff = fruits.get(i);
                     System.out.println("Enter new name. Skip if you want retain. ("+ ff.name + "): ");
                     String name = sc.nextLine();
-                    ff.name = name.trim().equals("") ? ff.name : name;
+                    //ff.name = name.trim().equals("") ? ff.name : name;
+
+                    if(!name.trim().equals(""))
+                        ff.name = name;
 
                     System.out.println("Enter new color. Skip if you want retain. ("+ ff.color + "): ");
                     String color = sc.nextLine();
